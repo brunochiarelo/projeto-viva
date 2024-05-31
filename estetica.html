@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATÁLOGO</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+        :root {
+    --cor0: #e7c2b0;
+    --cor1: rgb(222, 175, 155);
+    --cor2: rgb(234, 202, 187);
+    --cor3: rgb(242, 201, 160);
+    --cor4: rgb(196, 144, 95);
+
+    --cor10: #cea24bd5;
+    --cor11: #E8CDB0;
+    --cor12: #f5dfd4;
+    --cor13: #E8B0B4;
+    --cor14: #E8B3B0;
+
+    --fonte-titulo: "Cinzel Decorative", serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+        }
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+        body {
+        background-color: var(--cor14);
+        font-family: var(--fonte-padrao);
+        
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, var(--cor12), rgba(0, 0, 0, 0.288));
+            text-align: center;
+            min-height: 100px;
+            padding: 20px;
+        }
+
+        header > h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 3.5em;
+            font-weight: 200;
+            color: var(--cor10);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        header > h2 {
+            color: white;
+            font-family: var(--fonte-padrao);
+            text-shadow: 2px 2px 4px black;
+
+            
+        }
+
+        main {
+            margin: auto;
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            min-height: 300px;
+            max-width: 1000px;
+            background-color: var(--cor12);
+            text-align: center;
+
+        }
+
+        h3 {
+            text-shadow: 1px 1px 2px black;
+            font-size: 1.5em;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            
+        }
+
+        main > p > a {
+            text-shadow: 1px 1px 2px black;
+            color: white;
+            font-family: var(--fonte-titulo);
+            font-weight: 400;
+            font-size: 1.5em;
+            padding:10px;
+            
+            
+
+        }
+
+        a:hover {
+            background-color: darkred;
+            color: var(--cor10);
+            border-radius: 10px 10px 10px 10px;
+            transition-duration: 0.7s;
+
+        }
+
+        
+
+        aside {
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+            min-width: 300px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 5px 5px 10px black;
+
+            text-align: justify;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        aside > h3 {
+            text-align: center;
+        }
+
+        .margem {
+            padding-bottom: 100px;
+        }
+
+        img {
+            border: 2px solid black;
+        }
+
+
+        footer
+        {
+            background-color: var(--cor10);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CATÁLOGO</h1>
+        <h2>BELEZA E ESTÉTICA</h2>
+    </header>
+    <main>
+        <h3>Agende uma consulta com a Vivá !</h3>
+        <p><a href="https://www.instagram.com/vivaclinn/" target="_blank">Vivaclinn</a></p>
+        <h3>Procedimentos:</h3>
+        <img src="imagens/imagen1_files/img0001-pq.jpg" alt="imagens de silios"> <img src="imagens/imagen1_files/auri-p.jpg" alt="auriculoterapia">
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/boca-p.jpg">
+            <img src="imagens/imagen1_files/boca-m.jpg" alt="">
+        </picture>
+        <aside>
+            <h3>Benefícos do Hydra Gloss lips</h3>
+            <ul>
+                <li>
+                    A Hydra Lips Gloss promove uma renovação celular que regenera a pele dos lábios, promovendo hidratação, suavizando linhas finas de expressão e combatendo a flacidez, graças aos ativos cosméticos empregados. O Ácido Hialurônico promove hidratação e preenchimento subcutâneos.
+                </li>
+            </ul>
+        </aside>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/peeling-p.jpg">
+            <img src="imagens/imagen1_files/peeling-m.jpg" alt="imagen de peeling">
+        </picture>
+        <aside>
+            <h3>Benefícios do Peelink de Hollywood</h3>
+            <ul>
+                <li>
+                    O procedimento reduz a aparência de poros dilatados, diminui as linhas de expressão, harmoniza a tonalidade da cor da pele, aumenta a produção de colágeno e elastina e proporciona um efeito de profunda regeneração, deixando a pele mais homogênea e iluminada.
+                </li>
+            </ul>
+        </aside>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/pernas-p.jpg">
+            <img src="imagens/imagen1_files/pernas-m.jpg" alt="imagens de propaganda pernas">
+        </picture>
+        <img src="imagens/imagen1_files/despig-p.jpg" alt="imagem de sombrancelha">
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/enzimas-p.jpg">
+            <img src="imagens/imagen1_files/enzimas-m.jpg" alt="imagen aplicação de enzimas" class="margem">
+        </picture>
+    </main>
+    <footer>
+        <p>Produzido por Bruno Chiarelo</p>
+    </footer>
+    
+</body>
+</html>

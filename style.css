@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+
+:root {
+    --cor0: #e7c2b0;
+    --cor1: rgb(222, 175, 155);
+    --cor2: rgb(234, 202, 187);
+    --cor3: rgb(242, 201, 160);
+    --cor4: rgb(196, 144, 95);
+
+    --cor10: #cea24bd5;
+    --cor11: #E8CDB0;
+    --cor12: #f5dfd4;
+    --cor13: #E8B0B4;
+    --cor14: #E8B3B0;
+
+    --fonte-titulo: "Cinzel Decorative", serif;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor14);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor12), rgba(0, 0, 0, 0.288));
+    text-align: center;
+    min-height: 150px;
+    padding: 40px;
+    
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 5.5em;
+    font-weight: 200;
+    color: var(--cor10);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+header > h3 {
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px black;
+    
+}
+
+nav {
+    padding: 10px;
+
+}
+
+nav > a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor10);
+    text-shadow: 2px 2px 4px black;
+    margin-top: 0px;
+
+}
+
+
+nav > a:hover {
+    background-color: darkred;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    padding: 4px;
+}
+
+main {
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: var(--cor12);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main > img {
+    width: 100%;
+}
+
+.insta {
+    font-weight: bold;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+.linkinsta {
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+.linkinsta:hover {
+    background-color: darkred;
+    color: var(--cor10);
+    text-shadow: 2px 2px 4px black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+article {
+    margin: auto;
+}
+
+article > h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+}
+
+article > p {
+    text-indent: 30px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    padding: 10px;
+
+}
+
+article ol li {
+    padding: 10px;
+    text-align: justify;
+}
+
+article > ol {
+    list-style-type: '\1F5F8';
+    list-style-position: inside;
+}
+
+li:hover {
+    background-color: var(--cor13);
+} 
+
+
+.marcador1 {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    margin: 10px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+.marcador2 {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 0px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    
+
+}
+
+.marcador3 {
+    padding: 20px;
+    background-color: white;
+    margin: 10px 10px 25px 10px;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+}
+
+aside {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+aside > .borda {
+    border: 2px solid #000;
+}
+
+.borda2 {
+    border: 2px solid #000;
+}

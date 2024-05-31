@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULTADOS VIVÁ</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+
+    :root {
+        --cor0: #e7c2b0;
+        --cor1: rgb(222, 175, 155);
+        --cor2: rgb(234, 202, 187);
+        --cor3: rgb(242, 201, 160);
+        --cor4: rgb(196, 144, 95);
+
+        --cor10: #cea24bd5;
+        --cor11: #E8CDB0;
+        --cor12: #f5dfd4;
+        --cor13: #E8B0B4;
+        --cor14: #E8B3B0;
+
+        --fonte-titulo: "Cinzel Decorative", serif;
+        --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+
+        body {
+            font-family: var(--fonte-padrao);
+            
+           
+            
+            background: var(--cor14);
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .menu{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            height: 70px;
+        }
+
+        .menu li {
+            display: inline-block;
+            width: 90px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu li:hover .submenu {
+            height: 85px;
+        }
+
+        .menu > li:hover > a {
+            color: darkred;
+            
+        }
+
+        .menu > li:hover > a::before {
+            visibility: visible;
+            scale:  1 1;
+            
+        }
+
+        .submenu {
+            overflow: hidden;
+            position: absolute;
+            left: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            width: 100%;
+            background-color: darkred;
+            height: 0px;
+            line-height: 40px;
+            box-sizing: border-box;
+            transition: height 0.3s ease-in-out;
+            
+        }
+
+        .menu li .submenu a {
+            color: #fff;
+            opacity: 0px;
+            font-size: 16px;
+            transition: opacity 0.25s;
+        }
+        
+        .menu > li:hover .submenu a {
+            opacity: 1;
+            
+        }
+
+        .menu > li .submenu a:hover {
+            background: rgb(0 0 0 / 20%);
+        }
+
+        .menu > li a {
+            color: var(--cor10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 10px 0px 10px;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px black;
+            position: relative;
+            height: 100%;
+            font-size: 1.2em;
+            
+        }
+
+        .menu > li > a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            bottom: 3px;
+            left: 0px;
+            background-color: darkred;
+            transition: all 0.2s ease-in-out;
+            scale: 0 0;
+            visibility: hidden;
+        }
+
+        aside > h1 {
+            font-family: var(--fonte-titulo);
+            font-size: 4em;
+            font-weight: 200;
+            text-align: center;
+            text-shadow: 2px 2px 4px black;
+            margin: auto;
+            color: var(--cor10);
+            min-width: 300px;
+            max-width: 1000px;
+            
+            
+            
+
+            
+        }
+
+        main {
+            min-width: 300px;
+            max-width: 1000px;
+            background-color: var(--cor12);
+            margin: auto;
+            margin-top: 88px;
+            margin-bottom: 20px;
+            text-align: center;
+            padding-bottom: 10px;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 5px 5px 10px black;
+            
+        }
+
+        main > h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: var(--fonte-titulo);
+            text-decoration: underline;
+        
+        }
+
+        h2:hover {
+            color: var(--cor10);
+            border-radius: 10px 10px 0px 0px;
+            background-color: darkred;
+
+        }
+
+        img {
+            border: 2px solid black;
+        }
+
+        main > span {
+            background-color: white;
+            width: 300px;
+            margin-left: -50px;
+            margin-right: -50px;
+        }
+
+        header {
+            font-family: var(--fonte-padrao);
+            font-weight: 600;
+            min-width: 300px;
+            max-width: 800px;
+            text-align: center;
+            margin: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 2px 2px 4px black;
+        }
+
+        div {
+            padding-top: 20px;
+            
+            text-align: center;
+        }
+
+        .fundo {
+            margin-top: -20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+         footer > a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer > a:hover {
+            color: var(--cor10);
+        }
+        
+
+        
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <aside>
+        <h1>Resultados</h1>
+    </aside>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            
+            <li>
+                <a>Atendimento</a>
+                <ul class="submenu">
+                  <li><a href="https://www.instagram.com/bypatrickdpaula/" target="_blank">Patrick</a></li>
+                  <li><a href="https://www.instagram.com/yaraubiali/" target="_blank">Yara</a></li>
+                </ul>  
+            </li>
+            <li><a href="https://www.instagram.com/vivaclinn/" target="_blank">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Nóssos Resultados</h2>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/modelo1-p.jpg">
+            <img src="imagens/imagen1_files/modelo1-m.jpg" alt="imagem resultado estético">
+        </picture>
+        <p>
+            <img src="imagens/imagen1_files/acne-p.jpg" alt="imagem resultado acne">
+            <img src="imagens/imagen1_files/melasma-p.jpg" alt="imagem resultado melasma">
+            <picture>
+                <source media="(max-width: 670px)" srcset="imagens/imagen1_files/result2-p.jpg">
+                <img src="imagens/imagen1_files/result2-m.jpg" alt="imagem resultado labíos">
+            </picture>
+        </p>
+    </main>
+    <header>
+        <p>"Descubra a beleza que está esperando por você! Na nossa clínica de estética, oferecemos tratamentos que vão além da superfície, revelando a sua verdadeira essência radiante. Deixe-nos cuidar de você e veja como é fácil se apaixonar pela sua própria beleza. Agende agora e dê o primeiro passo para uma transformação que vai encantar todos os olhares!"</p>
+        <img src="imagens/imagen1_files/skills-1.jpg" alt="imagem logo">
+        <img src="imagens/imagen1_files/skills-2.jpg" alt="imagem logo">
+        <img src="imagens/imagen1_files/skills-1.jpg" alt="imagem logo">
+    </header>
+    <div>
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/remtatu-p.jpg">
+            <img src="imagens/imagen1_files/remtatu-m.jpg" alt="resultado remoção tatuagem media">
+        </picture>
+        <img src="imagens/imagen1_files/desc-p.jpg" alt="imagem propaganda">
+    </div>
+    <div class="fundo">
+        <picture>
+            <source media="(max-width: 670px)" srcset="imagens/imagen1_files/labios-p.jpg">
+            <img src="imagens/imagen1_files/labios-m.jpg" alt="imagem resultados labios">
+        </picture>
+    </div>
+    <footer>Produzido por <a href="https://www.instagram.com/brunochiarelo/">Bruno Chiarelo</a></footer>
+</body>
+</html>
